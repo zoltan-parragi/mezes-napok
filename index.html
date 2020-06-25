@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <title>Mézes napok</title>
+	    <link rel="stylesheet" type="text/css" href="style.css">
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	    <script src="https://kit.fontawesome.com/4cc50575cc.js"></script>
+	    <style>
+	    	.nav a:nth-child(1) {
+	    		border-bottom: none;
+	    	}
+	    	.nav-unfolded a:nth-child(1) {
+	    		border-bottom: none;
+	    	}
+	    </style>
+	</head>
+	<body>
+		<button onclick="scrollToTop()" id="scrollBtn" title="Scroll to top">
+	        <i class="fas fa-chevron-up"></i>
+	    </button>
+
+		<nav class="nav">
+	        <a href="#">Főoldal</a>
+	        <a href="products.html">Termékek</a>
+	        <a href="#prices-id">Árak</a>
+	        <a href="#producers-id">A termelők</a>
+	        <a href="#reviews-id">Vélemények</a>
+	        <a href="#contact-id">Kapcsolat</a>
+		    <a href="javascript:void(0);" class="icon" onclick="unfoldNav()">
+		      <i class="fa fa-bars"></i>
+		    </a>
+		</nav>
+
+	    <header>
+	       <div class="header-content">
+	         <h1>Méze<span id="bee-s">s<img id="bee" src="img/bee.png"></span> 
+	         	napo<span id="bee-k">k<img id="bee" src="img/bee.png"></span>
+	         </h1> 
+	         <h2>Egészség és édesség mindenkinek.</h2>
+	         <h3>Termelői méz és méhészeti termékek a Parragi családtól</h3>
+	       </div>
+	    </header>
+
+		<section class="about-honey">
+			<div class="about-honey-wrapper">
+				<div class="about-honey-wrapper-pic">
+					<img src="img/honeyicon.png">
+				</div>
+				<div class="about-honey-wrapper-content">
+					<h3>A jótékony méz</h3>
+					<p>Az ember a mézet az ősi időktől fogva gyűjtötte. Eleinte mint csemegét, később mint fontos táplálékot, végül mint gyógyterméket használta. Mai ismereteink alapján a méz közel 70-féle gyógy-, és fiziológiai hatással bír. A méz kiváló szénhidrátforrás, mely gazdag ásványi anyagokban, tartalmaz vitaminokat, szerves savakat, illóolajokat és fontos enzimeket.</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="prices" id="prices-id">
+			<div class="prices-title">
+				<h3>Árak</h3>
+			</div>
+			<div class="prices-wrapper">
+				<div class="prices-wrapper-item">
+					<h4>Akác méz</h4>
+					<p>1 üveg (900g): 2300Ft</p>
+					<p>1 kis üveg (450g): 1200Ft</p>
+					<p>Legalább 10 üveg vásárlása esetén 1 üveg ajándék vagy 2300Ft kedvezmény.</p>
+					<p><span class="stock-info">Készlet információ:</span> vásárolható</p>
+				</div>
+				<div class="prices-wrapper-item">
+					<h4>Vegyes virágméz</h4>
+					<p>1 üveg (900g): 1600Ft</p>
+					<p>1 kis üveg (450g): 900Ft</p>
+					<p>Legalább 10 üveg vásárlása esetén 1 üveg ajándék vagy 1600Ft kedvezmény.</p> 
+					<p><span class="stock-info">Készlet információ:</span> vásárolható</p> 
+				</div><div class="prices-wrapper-item">
+					<h4>Propoliszos méz</h4>
+					<p>1 üveg (900g): 3200Ft</p>
+					<p>1 kis üveg (450g): 1600Ft</p>
+					<p>Legalább 10 kis üveg vásárlása esetén 1 üveg ajándék vagy 1800Ft kedvezmény.</p>
+					<p><span class="stock-info">Készlet információ:</span> vásárolható</p>
+				</div><div class="prices-wrapper-item">
+					<h4>Virágpor</h4>
+					<p>10dkg: 800Ft.</p>
+					<p>25dkg: 1500Ft</p>
+					<p>Legalább 1kg vásárlása esetén 10dkg ajándék vagy 600Ft kedvezmény.</p>
+					<p><span class="stock-info">Készlet információ:</span> Augusztus végétől lesz kapható.</p>  
+				</div>
+			</div>
+		</section>
+
+
+		<section class="producers" id="producers-id">
+			<div class="producers-wrapper">
+				<div class="producers-wrapper-content">
+					<h3>A termelők</h3>
+					<p>Parragi Zoltán vagyok. A méhek szeretetét édesapámtól örököltem. Lassan feleségem is bekapcsolódott a munkába. A gyermekeink el sem tudnak képzelni egy reggelit mézes tea és mézes-vajas kenyér nélkül. A nagyobbak már besegítnek egy-egy munkafázisba.</p>
+				</div>
+				<div class="producers-wrapper-pic">
+					<img src="img/team.jpg">
+				</div>
+			</div>
+		</section>
+
+		<section class="reviews" id="reviews-id">
+			<div class="reviews-wrapper">
+				<div class="reviews-wrapper-title">
+					<h3>Vélemények</h3>
+				</div>
+				<div class="reviews-wrapper-content">
+					<p>Ismerjük a méheket és a gazdájukat is, közös terméküket örömmel ajánljuk. :)</p>
+					<p class="reviewer">Somogyi család, sok-sok Parragi-méz elfogyasztói</p>
+				</div>
+				<div class="reviews-wrapper-content">
+					<p>Már nagyon rég nem bírom megenni a boltban kapható mézet. A Parragi család által készített méz viszont nagyon finom. Csak ezt használom sütemények, teák, különböző ételek ízesítéséhez, édesítéséhez.</p>
+					<p class="reviewer">Ujfalusi Zsuzsa</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="contact" id="contact-id">
+			<div class="contact-wrapper">
+				<div class="contact-wrapper-title">
+					<h3>Kapcsolat</h3>
+				</div>
+				<div class="contact-wrapper-content">
+					<div class="contact-wrapper-content-item">
+						<h4>Elérhetőségek</h4>
+						<p>Tel.: 30/976-73-40</p>
+						<p>E-mail: <a href="mailto:email@example.com">mezesnapok@gmail.com</a></p>
+						<p>Facebook:  receptek, hasznos tanácsok, akciók. <a href="https://www.facebook.com/MezesNap/"><i class="fab fa-facebook-square"></i></a></p>
+						<p>Címünk: 8992, Bagod Vasút utca 3.</p>	
+					</div>
+					<div class="contact-wrapper-content-item">
+						<h4>Átvételi pontok</h4>
+						<p>A koronavírus okozta kellemetlenségek miatt a megvásárolni kívánt terméket egy egyeztetett helyre vagy házhoz szálltjuk.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+			
+		<footer>
+			<div class="footer-wrapper">
+				<div class="footer-wrapper-content">
+					<a href="index.html">Főoldal</a>
+					<a href="products.html">Termékek</a>
+					<a href="index.html#prices-id">Árak</a>
+					<a href="index.html#producers-id">Termelők</a>
+					<a href="index.html#reviews-id">Vélemények</a>
+					<a href="index.html#contact-id">Kapcsolat</a>
+				</div>
+				<div class="footer-wrapper-content">
+					<p>Copyright &#9400; 2020, 
+						<a href="http://parragi.com" target="_blank">parragi.com</a>
+					</p>
+				</div>
+			</div>
+		</footer>
+
+		<script src="app.js"></script> 
+	</body>
+</html>

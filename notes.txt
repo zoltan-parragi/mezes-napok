@@ -1,0 +1,154 @@
+function changeTextToWildflower() {
+  changeNavLinksBackground(1);
+  productHeadline.innerHTML="Vegyes virágméz";
+  productImage.src = "img/wildflower-honey.jpg";
+  featuresHeadline.innerHTML="Tulajdonságai";
+  featuresList.innerHTML=
+    "<li> Nem önálló fajtaméz. Különféle virágok nektárjából áll össze. </li> \
+    <li>Íze és zamata változatos, elsősorban a gyűjtés helyétol függ.</li>  \
+    <li>Színe rendkívül változatos, általában a halványbarnástól egészen a sötétbarnáig terjed. </li> \
+    <li>Összetételétől függően néhány hét vagy hónap után kristályosodik.</li>";
+  healthEffects.innerHTML=
+    "<li>Erősíti a szervezet védekező-rendszerét.</li> \
+    <li>Ezt a fajta mézet értékes virágokról, gyógynövényekről gyűjtötték \
+    a szorgalmas méhek, emiatt beltartalmilag kiváló méznek számít. \
+    Sőt a szakemberek szerint a legértékesebb mézek közé tartozik, \
+    mivel a természetgyógyászatban is használt különféle növényekről \
+    származó nektár révén a méz hatás területe kiszélesedik.</li>";
+  andMoreHeadline.innerHTML="Továbbá";
+  andMoreList.innerHTML=
+    "<li>Kristályosodás után óvatos melegítéssel újra folyékony \
+    állapotba hozható, de természetesebb kristályos állapotban fogyasztani.</li> \
+    <li>Olcsóbb ára miatt is kedvelt.</li> \
+    <li>Szívesen használják süteményekhez is.</li>";
+}
+
+<section class="products" id="products-id">
+      <div class="products-title">
+        <h3>Termékek</h3>
+      </div>
+      <div class="products-wrapper">
+        <div class="products-wrapper-acacia product-item">
+           <h4>Akácméz</h4>
+        </div>
+
+        <div class="products-wrapper-wildflower product-item">
+            <h4>Vegyes virágméz</h4>
+        </div>
+
+        <div class="products-wrapper-propolis product-item">
+           <h4>Propoliszos méz</h4>
+        </div>
+
+        <div class="products-wrapper-pollen product-item">
+           <h4>Virágpor</h4>
+        </div>
+      </div>
+    </section>
+
+.products {
+  background: $orange;
+  color: $grey-dark;
+  @include for-tablet-portrait-up {
+    
+  }
+  &-title {
+    text-align: center;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    color: $black;
+  }
+  &-wrapper {
+    width: 80%;
+    margin: 2rem auto 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    @include for-tablet-portrait-up {
+      width: 90%;
+    }
+    @include for-desktop-up {
+      margin-top: 3rem;
+    }
+    .product-item{
+      position: relative;
+      width: 100%;
+      height: 20rem;
+      box-shadow: 5px 8px 8px $grey;
+      @include for-tablet-portrait-up {
+        width: 43%;
+        max-width: 18rem;
+        float: left;
+        margin: 0.5rem 0.5rem 0rem 0.5rem;
+      }
+      @include for-tablet-landscape-up {
+        width: 23%;
+      }
+      h4 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        margin-top: 1rem;
+        padding: 0.5rem 0;
+        text-align: center;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        color: $black;
+        background: rgba(255, 255, 255, 0.4);
+      }
+    }
+    .product-item:not(:last-child){
+      margin-bottom: 2rem;
+    }
+    &-acacia {
+      background: url(img/acacia.jpg);
+      background-position: center;
+      background-size: cover;
+    }
+    &-wildflower {
+      background: url(img/wildflower.jpg);
+      background-position: center;
+      background-size: cover;
+    }
+    &-propolis {
+      background: url(img/propolis.jpg);
+      background-position: center;
+      background-size: cover;
+      &.product-item h4 {
+        background: rgba(68, 68, 68, 0.2);
+      }
+    }
+    &-pollen {
+      background: url(img/pollen.jpg);
+      background-position: center;
+      background-size: cover;
+    }
+  }
+  &::after {
+    @include clearfix;
+  }
+}
+
+
+h1 {
+      font-size:  4.5rem;
+      color: $orange;
+      line-height: 5rem;
+      text-transform: uppercase;
+      letter-spacing: 0.22rem;
+      -webkit-text-stroke: 0.2rem $orange;
+      margin-top: 3rem;
+      @include for-tablet-portrait-up {
+        font-size: 5.5rem;
+        line-height: 5.5rem;
+      }
+      @include for-tablet-landscape-up {
+        font-size: 6.5rem;
+        margin-top: 4rem;
+        letter-spacing: 0.15rem;
+      }
+      @include for-desktop-up {
+        font-size: 8rem;
+        margin-top: 5rem;
+      }

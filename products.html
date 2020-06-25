@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <title>Mézes napok</title>
+	    <link rel="stylesheet" type="text/css" href="style.css">
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	    <script src="https://kit.fontawesome.com/4cc50575cc.js"></script>
+	    <style>
+	    	.nav a:nth-child(2) {
+	    		border-bottom: none;
+	    	}
+	    	.nav-unfolded a:nth-child(2) {
+	    		border-bottom: none;
+	    	}
+	    </style>
+	</head>
+	<body>
+		<button onclick="scrollToTop()" id="scrollBtn" title="Scroll to top">
+	        <i class="fas fa-chevron-up"></i>
+	    </button>
+
+		<nav class="nav">
+	        <a href="index.html">Főoldal</a>
+	        <a href="#">Termékek</a>
+	        <a href="index.html#prices-id">Árak</a>
+	        <a href="index.html#producers-id">A termelők</a>
+	        <a href="index.html#reviews-id">Vélemények</a>
+	        <a href="#contact-id">Kapcsolat</a>
+		    <a href="javascript:void(0);" class="icon" onclick="unfoldNav()">
+		      <i class="fa fa-bars"></i>
+		    </a>
+		</nav>
+
+	    <div class="productspage-header">
+	       <div class="productspage-header-content">
+	         <h1>Méze<span id="bee-s">s<img id="bee" src="img/bee.png"></span> 
+	         	napo<span id="bee-k">k<img id="bee" src="img/bee.png"></span>
+	         </h1>
+	         <h2>Termékek</h2>
+	       </div>
+	    </div>
+
+		<div class="productspage-nav">
+			<div class="productspage-nav-wrapper">
+			        <a 
+			        	class="productspage-nav-link"
+			        	onclick="changeToAcacia()"
+			        	href="#products"
+			        >
+			        	Akác méz
+			        </a>
+			        <a 
+			        	class="productspage-nav-link"
+			        	onclick="changeToWildflower()"
+			        	href="#products"
+			        >
+			        	Vegyes virágméz
+			        </a>
+			        <a 
+			        	class="productspage-nav-link"
+			        	onclick="changeToPropolis()"
+			        	href="#products" 
+			        	
+			        >
+			        	Propoliszos méz
+			        </a>
+			        <a 
+			        	class="productspage-nav-link"
+			        	onclick="changeToPollen()"
+			        	href="#products" 
+			        >
+			        	Virágpor
+			       	</a>
+				
+			</div>
+		</div>
+
+		<section class="productspage-items" id="products">
+			<div class="productspage-items-wrapper" id="products-acacia">
+				<h3>Akác méz</h3>
+				<div class="productspage-items-wrapper-img">
+					<img src="img/acacia-honey.jpg">
+				</div>
+				<div class="productspage-items-wrapper-content">
+					<h4>Tulajdonságai</h4>
+					<ul>
+						<li>Színe csaknem színtelentől az enyhén sárga változatig terjed.</li>
+						<li>Íze kellemes, lágy, édes. Kevéssé savas mézfajta.</li>
+						<li>Magas gyümölcscukortartalma miatt sokáig folyékony marad, akár 1-2 évig is.</li>
+					</ul>
+					<h4>Gyógyhatása</h4>
+					<ul>
+						<li>Jó fertőtlenítő. Szájüreg, garat, torok antiszeptikum.</li>
+						<li>Köhögéscsillapító hatású.</li>
+						<li>Torokgyulladás kezelésére ajánlott.</li>
+						<li>A gyümölcscukor tartalmának köszönhetően májregeneráló hatással bír.</li>
+						<li>A vércukorszint szabályozásánál van fontos szerepe.</li>
+						<li>Csökkenti az izomgyengeséget, a mészhiányt.</li>
+					</ul>
+					<h4>Továbbá</h4>
+					<ul>
+						<li>Harmonikus, nem domináns íze miatt italok és sütemények ízesítésére szívesen használt édesítoszer.</li>
+						<li>Kiváló alternatíva a cukor helyett.</li>
+						<li>Kávét, teát édesítve kiemeli azok eredeti aromáját.</li>
+					</ul>	
+				</div>
+			</div>
+
+			<div class="productspage-items-wrapper" id="products-wildflower">
+				<h3>Vegyes virágméz</h3>
+				<div class="productspage-items-wrapper-img">
+					<img src="img/wildflower-honey.jpg">
+				</div>
+				<div class="productspage-items-wrapper-content">
+					<h4>Tulajdonságai</h4>
+					<ul>
+						<li> Nem önálló fajtaméz. Különféle virágok nektárjából áll össze. </li>
+					    <li>Íze és zamata változatos, elsősorban a gyűjtés helyétol függ.</li>
+					    <li>Színe rendkívül változatos, általában a halványbarnástól egészen a sötétbarnáig terjed. </li>
+					    <li>Összetételétől függően néhány hét vagy hónap után kristályosodik.</li>
+					</ul>
+					<h4>Gyógyhatása</h4>
+					<ul>
+						<li>Erősíti a szervezet védekező-rendszerét.</li>
+					    <li>Ezt a fajta mézet értékes virágokról, gyógynövényekről gyűjtötték
+					    	a szorgalmas méhek, emiatt beltartalmilag kiváló méznek számít.
+					    	Sőt a szakemberek szerint a legértékesebb mézek közé tartozik, mivel a természetgyógyászatban is használt különféle növényekről származó nektár révén a méz hatás területe kiszélesedik.
+					    </li>
+					</ul>
+					<h4>Továbbá</h4>
+					<ul>
+						<li>Kristályosodás után óvatos melegítéssel újra folyékony állapotba hozható, de természetesebb kristályos állapotban fogyasztani.</li>
+					    <li>Olcsóbb ára miatt is kedvelt.</li>
+					    <li>Szívesen használják süteményekhez is.</li>
+					</ul>	
+				</div>
+			</div>
+
+			<div class="productspage-items-wrapper" id="products-propolis">
+				<h3>Propoliszos méz</h3>
+				<div class="productspage-items-wrapper-img">
+					<img src="img/propolis-honey.jpg">
+				</div>
+				<div class="productspage-items-wrapper-content">
+					<h4>Tulajdonságai</h4>
+					<ul>
+						<li>Színe sötétebb árnyalatú.</li>
+    					<li>Ízén érezhetõ a propolisz tartalom.</li>
+					</ul>
+					<h4>Gyógyhatása</h4>
+					<ul>
+						<li>Gyulladáscsökkentő, fertőtlenítő, antibakteriális hatású.</li>
+					    <li>Fájdalomcsillapító (torokfájás, fogfájás, stb.).</li>
+					    <li>Vérnyomás csökkentő/szabályozó.</li>
+					    <li>Csökkenti a vércukorszintet.</li>
+					    <li>Prosztata betegségekre, menstruációs tünetekre is jó hatással van.</li>
+					    <li>Használahtó bőrproblémák, égés, herpesz esetén.</li>
+					</ul>
+					<h4>Továbbá</h4>
+					<ul>
+						<li>Érdemes tájékozódni további gyógyhatásairól is.</li>
+					</ul>	
+				</div>
+			</div>
+
+			<div class="productspage-items-wrapper" id="products-pollen">
+				<h3>Virágpor</h3>
+				<div class="productspage-items-wrapper-img">
+					<img src="img/pollen.jpg">
+				</div>
+				<div class="productspage-items-wrapper-content">
+					<h4>Összetétele</h4>
+					<ul>
+						<li>30% szénhidrát</li>
+					    <li>26% cukor</li>
+					    <li>23% fehérje</li>
+					    <li>5% lipid</li>
+					    <li>2% fenol vegyület (pl. flavonid)</li>
+					    <li>1,6% ásványi anyag (pl. kálcium, vas, réz, cink, foszfor, magnézium)</li>
+					    <li>0,6% vízben oldódó vitaminok és savak (pl. B1, B2, B6, C)</li>
+					    <li>0,1% zsírban oldódó vitaminok (pl. A, E, D)</li>
+					</ul>
+					<h4>Gyógyhatása</h4>
+					<ul>
+						<li>Antioxidáns hatása jelentõs.</li>
+					    <li>Máj tisztító hatású.</li>
+					    <li>Erõsíti az immunrendszert.</li>
+					    <li>Stressz oldó hatású.</li>
+					    <li>Erõsen gyulladás csökkentõ.</li>
+					    <li>Méregtelenítõ.</li>
+					    <li>Étvágy javító hatású.</li>
+					    <li>Antibiotikus hatású.</li>
+					</ul>
+					<h4>Virágpor kúra</h4>
+					<ul>
+						<li>A méhek által gyűjtött virágpor rengeteg vitamint, ásványi anyagot, antioxidánst, enzimet, flavonidot és még sok hasznos anyagot tartalmaz.</li>
+					    <li>Korunk sok betegsége valamilyen tápanyag, ásványi anyag, vitamin stb. hiányára vezethető vissza. Virágpor fogyasztásával csökkenthető a hiánybetegségek kialaulásának valószínűsége.</li>
+					    <li>Kiváló étrend kiegészítő.</li>
+					    <li>Felnőttek számára 20-40g virágpor bevitel ajánlott naponta. Ez 3-5 teáskanál virágpor fogyasztását jelenti. Gyerekek számára elegendő 1-2 teáskanálnyi naponta.</li>
+					    <li>Leghatékonyabb, ha étkezések előtt háromszor fogyasztjuk éhgyomorra.</li>
+					    <li>A kúra hossza 1-3 hónap lehet. 2-4 alkalommal ismételhető egy év során.</li>
+					    <li>Könnyebben emészthetővé tehetjük a napi adagunkat, ha apróra őröljük a virágpor darabokat vagy langyos vízben feloldjuk. Legjobb, ha ilyenkor 2-3 órát állni hagyjuk. Víz helyett használhatunk tejet, gyümölcs vagy zöldség levet is.</li>
+					    <li>1:1-től 1:4 arányig keverhető mézbe, vajba, túróba, joghurtba, lekvárba.</li>
+					</ul>	
+				</div>
+			</div>
+
+		</section>
+
+		<section class="contact" id="contact-id">
+			<div class="contact-wrapper">
+				<div class="contact-wrapper-title">
+					<h3>Kapcsolat</h3>
+				</div>
+				<div class="contact-wrapper-content">
+					<div class="contact-wrapper-content-item">
+						<h4>Elérhetőségek</h4>
+						<p>Tel: 30/976-73-40</p>
+						<p>E-mail: <a href="mailto:email@example.com">mezesnapok@gmail.com</a></p>
+						<p>Receptek, hasznos tanácsok, akciók a facebook oldalunkon: <a href="https://www.facebook.com/MezesNap/"><i class="fab fa-facebook-square"></i></a></p>	
+					</div>
+					<div class="contact-wrapper-content-item">
+						<h4>Átvételi pontok</h4>
+						<p>A Korona vírus okozta kellemetlenségek miatt a megvásárolni kívánt terméket egy egyeztetett helyre vagy házhoz szálltjuk.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+			
+		<footer>
+			<div class="footer-wrapper">
+				<div class="footer-wrapper-content">
+					<a href="index.html">Főoldal</a>
+					<a href="#">Termékek</a>
+					<a href="index.html#prices-id">Árak</a>
+					<a href="index.html#producers-id">Termelők</a>
+					<a href="index.html#reviews-id">Vélemények</a>
+					<a href="#contact-id">Kapcsolat</a>
+				</div>
+				<div class="footer-wrapper-content">
+					<p>Copyright &#9400; 2020, 
+						<a href="http://parragi.com" target="_blank" >parragi.com</a>
+					</p>
+				</div>
+			</div>
+		</footer>
+
+		<script src="app.js"></script> 
+	</body>
+</html>
